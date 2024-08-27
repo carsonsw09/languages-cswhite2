@@ -9,6 +9,7 @@
 | **Section** | CSCI-330 001 |
 | **Semester** | Fall 2024 |
 | **Mav_Username** | Cswhite2 |
+| **700_Number** || 700513812 |
 | **GitHub_Link** | https://github.com/carsonsw09 |
 | **Repository_Link** | https://github.com/carsonsw09/languages-cswhite2 |
 
