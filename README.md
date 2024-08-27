@@ -23,5 +23,5 @@
 | **Due_Date** | Unknown |
 | **Status** | Finished |
 | **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/docker_project/Assignment1 |
-| **Notes** | The docker configuration is stored in the parent folder of Assignment 1. In the Assignment 1 folder, a screenshot of the program is provided. |
+| **Notes** | The docker configuration is stored in the parent folder of Assignment 1. In the Assignment 1 folder, a screenshot of the program is provided as well as the dev container configuration. |
 
