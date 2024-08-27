@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  languagescswhite2:
+    image: languagescswhite2
+    build:
+      context: .
+      dockerfile: ./Dockerfile
