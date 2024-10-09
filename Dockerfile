@@ -1,19 +1,21 @@
-# GCC support can be specified at major, minor, or micro version
-# (e.g. 8, 8.2 or 8.2.0).
-# See https://hub.docker.com/r/library/gcc/ for all supported GCC
-# tags from Docker Hub.
-# See https://docs.docker.com/samples/library/gcc/ for more on how to use this image
-FROM gcc:latest
+# Use an official OpenJDK image as a base image
+FROM openjdk:11-jdk
 
-# These commands copy your files into the specified directory in the image
-# and set that as the working location
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
+# Install SBT
+RUN apt-get update && apt-get install -y curl gnupg && \
+    echo "deb https://repo.scala-sbt.org/scalasbt/debian all main" | tee /etc/apt/sources.list.d/sbt.list && \
+    curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x99E82A75642AC823" | apt-key add && \
+    apt-get update && apt-get install -y sbt
 
-# This command compiles your app using GCC, adjust for your source code
-RUN g++ -o myapp main.cpp
+# Set the working directory
+WORKDIR /usr/src/app
 
-# This command runs your application, comment out this line to compile only
-CMD ["./myapp"]
+# Copy the current directory contents into the container at /usr/src/app
+COPY . .
 
-LABEL Name=languagescswhite2 Version=0.0.1
+# Expose the port the app runs on
+EXPOSE 8080
+
+# Default command to run SBT (change this to sbt run if you want to auto-run the app)
+CMD ["sbt"]
+
