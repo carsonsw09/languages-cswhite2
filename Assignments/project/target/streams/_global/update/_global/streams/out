@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/workspaces/Repositories/languages-cswhite2/Assignments/project/"), "assignments-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating assignments-build[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved assignments-build dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of assignments-build[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of assignments-build[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/workspaces/Repositories/languages-cswhite2/Assignments/project/"), "assignments-build")[0m
