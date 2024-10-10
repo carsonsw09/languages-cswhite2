@@ -15,6 +15,31 @@
 
 ## Hw Assignments
 
+### Website Aplication
+
+| Name | Value |
+| :--- | :--- |
+| **Name** | Website Application |
+| **Description** | Have a conversation with chat gpt and design a web application using html and css |
+| **Due_Date** | 10/9/24 |
+| **Status** | Finished | 
+| **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Assignments/state-capital-app |
+| **Self_Grade** | 100/100 |
+| **Notes** | Everything is completed and the links are turned in as well as screenshots in this assignment folder |
+
+### Funcitonal Programming
+
+| Name | Value |
+| :--- | :--- |
+| **Name** | Functional Programming |
+| **Description** | Have a talk with chat gpt about functional programming and using a sbt server, sort a list of json strings |
+| **Due_Date** | 10/7/24 |
+| **Status** | Finished |
+| **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Assignments/Functional%20Programming |
+| **Self_Grade** | 100/100 |
+| **Notes** | Everything is completed and screenshots are present of the server running and performing the json string search |
+
+
 ### Hw Assignment 1
 
 | Name | Value |
