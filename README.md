@@ -15,6 +15,19 @@
 
 ## Hw Assignments
 
+### Full Stack Node Application
+
+| Name | Value |
+| :--- | :--- |
+| **Name** | Matching-Card Game |
+| **Description** | Have a conversation with chat gpt and design a full stack node application using docker compose |
+| **Due_Date** | 10/16/24 |
+| **Status** | Finished |
+| **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Assignments/Full-Node-App/Memory%20Game |
+| **Self_Grade** | 100/100 |
+| **Notes** | The application works great and is built up using docker compose. There are screenshots, links, and videos for this application. |
+
+
 ### Website Aplication
 
 | Name | Value |
