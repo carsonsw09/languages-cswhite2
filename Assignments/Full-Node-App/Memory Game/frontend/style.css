@@ -1,12 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
-  color: #333;
+  margin-bottom: 20px;
 }
 
 #game-board {
@@ -26,7 +24,6 @@ h1 {
   align-items: center;
   font-size: 24px;
   cursor: pointer;
-  border-radius: 8px;
 }
 
 .flipped {
@@ -34,12 +31,7 @@ h1 {
   color: #333;
 }
 
-#score, #timer, #message, #best-time {
+#score, #timer, #message {
   margin-top: 20px;
   font-size: 20px;
-}
-
-#best-time {
-  color: #006400;
-  font-weight: bold;
 }

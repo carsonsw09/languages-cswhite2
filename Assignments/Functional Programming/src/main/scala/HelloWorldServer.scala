@@ -5,7 +5,6 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import spray.json._
 import scala.io.StdIn
-import scala.io.Source
 
 // Case class to represent the list of strings in JSON
 final case class StringList(strings: List[String])
@@ -34,13 +33,22 @@ object HelloWorldServer extends JsonSupport {
           complete(s"Hello!")
         }
       } ~
-      path("sortStringsFromFile") {
+      // Route to sort strings passed via POST request as JSON
+      path("sortStrings") {
+        post {
+          entity(as[StringList]) { stringList =>
+            val sortedStrings = stringList.strings.sorted  // Sort the list of strings
+            complete(StringList(sortedStrings))            // Return the sorted list as JSON
+          }
+        }
+      } ~
+      // Optional GET route: Strings are passed as query parameters
+      path("sortStringsQuery") {
         get {
-          // Use the correct path to the JSON file
-          val jsonFile = Source.fromFile("src/main/scala/strings.json").getLines.mkString
-          val stringList = jsonFile.parseJson.convertTo[StringList] // Parse JSON into StringList
-          val sortedStrings = stringList.strings.sorted             // Sort the list of strings
-          complete(StringList(sortedStrings))                       // Return the sorted list as JSON
+          parameter('strings.as[String]) { strings =>
+            val stringList = strings.split(",").toList.sorted // Split and sort the strings
+            complete(StringList(stringList))                  // Return the sorted list as JSON
+          }
         }
       }
 

@@ -1,33 +1,32 @@
+version: '3.8'
+
 services:
   app:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '3000:3000'
+      - '3000:3000'  # Map the container's port 3000 to localhost:3000
     environment:
-      - DATABASE_URL=postgres://postgres:postgres@db:5432/memory_game_db
-    volumes:
-      - .:/app  # Mount the current directory to the container's /app directory
-      - /app/node_modules  # Avoid conflicts with host node_modules
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/card_matching_db  # DB connection URL
     depends_on:
       - db
-    container_name: memory-game-app
-    command: npm start  # Use npm start to run the application
+    volumes:
+      - .:/app  # Mount the local app directory into the container
+    command: npm start  # Start the Node.js server
 
   db:
     image: postgres:13
     restart: always
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: memory_game_db
-    ports:
-      - '5432:5432'
+      POSTGRES_USER: postgres  # PostgreSQL user
+      POSTGRES_PASSWORD: postgres  # PostgreSQL password
+      POSTGRES_DB: card_matching_db  # Name of the database to create
     volumes:
-      - db_data:/var/lib/postgresql/data
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
-    container_name: memory-game-db
+      - db_data:/var/lib/postgresql/data  # Persist database data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql  # Initialize DB schema
+    ports:
+      - '5432:5432'  # Map PostgreSQL port to localhost:5432
 
 volumes:
   db_data:

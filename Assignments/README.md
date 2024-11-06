@@ -15,29 +15,29 @@
 
 ## Hw Assignments
 
-### Website Aplication
+### Hw Assignment 3
 
 | Name | Value |
 | :--- | :--- |
-| **Name** | Website Application |
-| **Description** | Have a conversation with chat gpt and design a web application using html and css |
+| **Name** | Logic programming |
+| **Description** | Publish a simple website with html and css |
 | **Due_Date** | 10/9/24 |
-| **Status** | Finished | 
-| **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Assignments/state-capital-app |
-| **Self_Grade** | 100/100 |
-| **Notes** | Everything is completed and the links are turned in as well as screenshots in this assignment folder |
+| **Status** | Unfinished |
+| **Self_Grade** | |
+| **Link** | |
+| **Notes** | |
 
-### Funcitonal Programming
+### Hw Assignment 2
 
 | Name | Value |
 | :--- | :--- |
 | **Name** | Functional Programming |
-| **Description** | Have a talk with chat gpt about functional programming and using a sbt server, sort a list of json strings |
+| **Description** | Have a conversation with chat gpt about scala and functional programming, then add a new route that sorts json strings |
 | **Due_Date** | 10/7/24 |
-| **Status** | Finished |
+| **Status** | Partly-Finished |
+| **Self_Grade** | 80/100 |
 | **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Assignments/Functional%20Programming |
-| **Self_Grade** | 100/100 |
-| **Notes** | Everything is completed and screenshots are present of the server running and performing the json string search |
+| **Notes** | I was able to get everything except for the json strings to be sorted. You can see in the chat gpt talks that I tried a lot of options. I am still working on figuring it out |
 
 
 ### Hw Assignment 1
