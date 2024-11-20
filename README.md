@@ -15,6 +15,18 @@
 
 ## Hw Assignments
 
+### Prolog Assignment
+
+| Name | Value |
+| :--- | :--- |
+| **Name** | Prolog Maze Game |
+| **Description** | Have a conversation with chat gpt and design a puzzle game using prolog langauge |
+| **Due Date** | 11/20/2024 |
+| **Status** | Finished |
+| **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Assignments/Prolog |
+| **Self Grade** | 100/100 |
+| **Notes** | The program runs well and there is a screenshot folder with proof of the program running |
+
 ### Full Stack Node Application
 
 | Name | Value |
