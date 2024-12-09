@@ -13,6 +13,17 @@
 | **GitHub_Link** | https://github.com/carsonsw09 |
 | **Repository_Link** | https://github.com/carsonsw09/languages-cswhite2 |
 
+## Final Project
+
+| Name | Value |
+| :--- | :--- |
+| **Name** | C Presentation |
+| **Due Date** | 12/9/24 |
+| **Status** | Finished |
+| **Link** | https://github.com/carsonsw09/languages-cswhite2/tree/main/Final_Project |
+| **Self Grade** | 100/100 |
+| **Notes** | The code for my demonstration and the powerpoint are stored in there |
+
 ## Hw Assignments
 
 ### Prolog Assignment
